@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: product_microservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/productDB?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#feign:
+#  client:
+#    config:
+#      product-service:
+#        url: http://localhost:8081/products
+

@@ -32,6 +32,8 @@ public class ProductServiceImpl implements ProductService {
         }
         Category category = categoryOpt.get();
 
+//        Product product = new Product(productRequest.name());
+
         Product product = Product.builder()
                 .name(productRequest.name())
                 .description(productRequest.description())
